@@ -1,0 +1,27 @@
+body{
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  background: #001222;
+}
+
+.formContainer {
+  position: absolute;
+  width: 400px;
+  height: 453px;
+  left: 520px;
+  top: 286px;
+  background: #FFFFFF;
+  border-radius: 32px;
+  display: block;
+  text-align: center;
+}
+
+form {
+  margin-top: 30px;
+}
+
+li{
+  list-style-type: none;
+  text-align:left;
+}
