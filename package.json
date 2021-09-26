@@ -1,10 +1,10 @@
 {
   "name": "boilerplate-react-webpack",
   "version": "0.2.3",
-  "description": "A webpack React starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
+  "description": "A small form project",
+  "repository": "https://github.com/adam-king-10/small-code-challenge-form.git",
   "main": "server/index.js",
-  "author": "EDA",
+  "author": "Adam King",
   "license": "ISC",
   "scripts": {
     "client": "webpack serve --config ./client/webpack.config.js --hot",
@@ -31,12 +31,6 @@
       "@babel/plugin-proposal-class-properties",
       "@babel/plugin-proposal-object-rest-spread",
       "@babel/plugin-transform-runtime"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "eda",
-    "ignorePatterns": [
-      "bundle.js"
     ]
   },
   "eslintConfig": {

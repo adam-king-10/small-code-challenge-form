@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {getGreeting} from '../apiClient'
+import Form from './Form'
+import Output from './Output'
 
 const App = () => {
 
@@ -12,7 +14,7 @@ const App = () => {
         console.log(greeting)
         setGreeting(greeting)
       })
-  }, [count])
+  })
 
   return (
     <>
