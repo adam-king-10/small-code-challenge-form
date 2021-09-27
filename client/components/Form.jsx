@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
 
-function Form (props) {
+function Form () {
   const defaultState = {
     name: '',
     age: '',
@@ -45,6 +45,5 @@ return (
   </div>
   )
 }
-
 
 export default Form
