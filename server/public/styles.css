@@ -40,9 +40,23 @@ form{
   padding-left: 10px;
 }
 
-li{
+.tableContainer{
+  height:200px;
+  display: flex;
+  align-items: center;
+}
+
+table{
+  padding-left: 20px;
+  width: 100%;
+}
+td{
+  width:50%;
+}
+
+.formItem{
   list-style-type: none;
-  text-align:left;
+  text-align: left;
   font-style: italic;
   font-weight: normal;
   font-size: 14px;
@@ -51,7 +65,9 @@ li{
 
 .userInput{
   font-style: normal;
+  text-align: left;
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
+  margin-left: 10px;
 }
