@@ -1,13 +1,33 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import { use } from '../../server/server';
 
-function Form () {
+
+function Form (props) {
+  const defaultState = {
+    name: '',
+    age: '',
+    email: ''
+  }
+  const [input, setInput] = useState(defaultState)
+
+  useEffect(() => {
+
+  })
+
+  const handleChange = evt => {
+    const { name, value } = evt.target
+    setInput({
+        ...input,
+        [name]: value
+      })
+  }
 
 return (
   <div className="formContainer">
     <form>
-      <input type="text" className="input" placeholder="Name" name="fname"/> <br/>
-      <input type="text" className="input" placeholder="Age" name="age"/> <br/>
-      <input type="text" className="input" placeholder="Email" name="email"/>
+      <input type="text" className="input" placeholder="Name" name="fname" value={item.name} onChange={handleChange}/><br/>
+      <input type="text" className="input" placeholder="Age" name="age" value={item.name} onChange={handleChange}/> <br/>
+      <input type="text" id="email" placeholder="Email" name="email"value={item.name} onChange={handleChange}/>
     </form>
     <div>
       <ul>
